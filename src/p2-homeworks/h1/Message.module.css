@@ -1,52 +1,39 @@
-.wrapper {
+.message {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    margin: 0;
-    padding: 0;
+    align-items: flex-end;
     background-color: greenyellow;
-}
-
-.text {
-    width: 200px;
-    margin: 4px 4px 4px 70px;
     padding: 5px;
-    position: relative;
-    text-align: center;
-    background-color: #282c34;
-    color: white;
-    border-radius: 7px;
-}
-
-.text::after {
-    content: '';
-    position: absolute;
-    left: -20px;
-    bottom: 0px;
-    border: 15px solid transparent;
-    border-right: 15px solid #282c34;
-    border-bottom: 15px solid #282c34;
 }
 
 .avatar {
-    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-.avatar img {
-    position: absolute;
-    bottom: 0;
-    margin: 5px;
-    width: 50px;
-    border-radius: 50%;
+.content {
+    padding: 10px;
+    background-color: #282c34;
+    border-radius: 7px 7px 7px 0;
+}
+
+.angle {
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 20px, #282c34 0);
 }
 
 .name {
     color: blueviolet;
-    text-align: left;
+    font-weight: bold;
+}
+
+.text {
+    color: white;
 }
 
 .time {
+    display: flex;
+    justify-content: flex-end;
     color: green;
-    text-align: end;
 }
