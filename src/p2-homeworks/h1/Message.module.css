@@ -30,15 +30,16 @@
 }
 
 .avatar {
-    position:relative;
+    position: relative;
 }
+
 .avatar img {
     position: absolute;
     bottom: 0;
     margin: 5px;
     width: 50px;
     border-radius: 50%;
-    }
+}
 
 .name {
     color: blueviolet;
