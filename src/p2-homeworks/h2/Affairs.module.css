@@ -1,13 +1,13 @@
-.wrapper {
-    background-color: greenyellow;
-}
-
 .button {
     margin: 5px;
     background-color: #4c7bda;
     color: #e1e823;
     font-weight: bold;
     cursor: pointer;
+}
+
+.active {
+    background-color: #829acb;
 }
 
 .content {
@@ -28,24 +28,27 @@
     font-weight: bold;
 }
 
-.name {
-    grid-area: name;
+.item {
     margin-left: 10px;
 }
 
-.priority {
-    grid-area: priority;
-    color: red;
-    align-items: center;
-}
-
 .buttonX {
-    grid-area: buttonX;
     width: 30px;
     height: 20px;
     margin: 5px;
     background-color: #61dafb;
     color: red;
     font-weight: bold;
+}
 
+.high {
+    color: red;
+}
+
+.middle {
+    color: orange;
+}
+
+.low {
+    color: lime;
 }

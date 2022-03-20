@@ -1,7 +1,7 @@
 .message {
     display: flex;
     align-items: flex-end;
-    background-color: greenyellow;
+/*    background-color: greenyellow;*/
     padding: 5px;
 }
 
