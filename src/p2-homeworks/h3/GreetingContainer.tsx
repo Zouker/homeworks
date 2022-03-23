@@ -20,18 +20,21 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         const trimmedName = e.currentTarget.value.trim() // need to fix
         if (trimmedName) {
             setName(trimmedName)
-            setError('')
+            error && setError('')
         } else {
-            setName('')
+            name && setName('')
             setError('name is require!')
         }
     }
     const addUser = () => {
-        addUserCallback(name)
-        alert(`Hello ${name}!`)
-        setName('')
+        if (name) {
+            addUserCallback(name)
+            alert(`Hello ${name}!`)
+            setName('')
+        } else {
+            setError(error)
+        }
     }
-
 
     const totalUsers = users.length // need to fix
 

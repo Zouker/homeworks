@@ -20,7 +20,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             <input value={name} onChange={setNameCallback} className={inputClass} onKeyPress={ (e) => {if (e.key === 'Enter') {
             addUser()}
             }}/>
-            <button disabled={!name} onClick={addUser}>add</button>
+            <button className={s.button} onClick={addUser}>add</button>
             <span>{totalUsers}</span>
             <div className={s.errorMessage}>{error}</div>
         </div>

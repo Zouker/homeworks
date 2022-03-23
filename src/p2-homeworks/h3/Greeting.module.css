@@ -9,3 +9,28 @@
 .errorMessage {
     color: red
 }
+
+.button {
+    margin:5px;
+    width: 70px;
+    background-color: #385d8c;
+    color: #a2e0fd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: #99ffff;
+    font-weight: bold;
+}
+
+.button:focus {
+    outline: #a2e0fd solid 1px;
+    border-color: #385d8c;
+}
+
+.button:active {
+    background-color: #a2e0fd;
+    color: #385d8c;
+}
