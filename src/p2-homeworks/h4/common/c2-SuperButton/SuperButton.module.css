@@ -10,6 +10,7 @@
 .default:hover {
     transform: scale(1.1);
     color: #99ffff;
+    font-weight: bold;
 }
 
 .default:focus {
@@ -20,6 +21,13 @@
 .default:active {
     background-color: #a2e0fd;
     color: #385d8c;
+}
+
+.default:disabled {
+    color: #99a3a9;
+    transform: scale(1.0);
+    font-weight: unset;
+    cursor: auto;
 }
 
 .red {
@@ -34,6 +42,7 @@
 .red:hover {
     transform: scale(1.1);
     color: #941a29;
+    font-weight: bold;
 }
 
 .red:focus {

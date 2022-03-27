@@ -1,8 +1,15 @@
-.someClass {
-
+.defaultInput {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #939292;
 }
 
 .error {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: red;
     border: 1px solid red;
 }
 
@@ -11,7 +18,7 @@
 }
 
 .button {
-    margin:5px;
+    margin: 5px;
     width: 70px;
     background-color: #385d8c;
     color: #a2e0fd;

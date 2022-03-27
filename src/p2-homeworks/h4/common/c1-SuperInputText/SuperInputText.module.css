@@ -1,5 +1,8 @@
 .superInput {
-
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
 }
 
 .errorInput {
@@ -9,4 +12,5 @@
 
 .error {
     color: red;
+    font-weight: bold;
 }
