@@ -5,6 +5,10 @@
     color: #939292;
 }
 
+.defaultInput {
+    outline: none;
+}
+
 .error {
     padding: 5px;
     border-radius: 10px;

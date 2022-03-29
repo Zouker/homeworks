@@ -15,12 +15,14 @@
     padding: 10px;
     background-color: #282c34;
     border-radius: 7px 7px 7px 0;
+    opacity: 0.8;
 }
 
 .angle {
     width: 20px;
     height: 20px;
     background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 20px, #282c34 0);
+    opacity: 0.8;
 }
 
 .name {
