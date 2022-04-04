@@ -2,17 +2,22 @@ import React, {useState} from 'react'
 import {NavLink} from 'react-router-dom';
 import s from './Header.module.css'
 
+type ObjectActiveClassName = {
+    isActive: boolean
+}
+
 function Header() {
     const [buttonIsClicked, setButtonIsClicked] = useState(false)
 
     const buttonHandler = () => buttonIsClicked ? setButtonIsClicked(false) : setButtonIsClicked(true)
 
+    const isActive = ({isActive}: ObjectActiveClassName) => isActive ? `${s.active} ${s.menuItem}` : s.menuItem
+
     return (
-        <div className={s.container}>
             <div className={`${s.wrapper} ${(buttonIsClicked) ? s.buttonIsNotClickedClicked : s.buttonIsClicked}`}>
-                <NavLink className={s.menuItem} to={'/pre-junior'}>PreJunior</NavLink>
-                <NavLink className={s.menuItem} to={'/junior'}>Junior</NavLink>
-                <NavLink className={s.menuItem} to={'/junior-plus'}>JuniorPlus</NavLink>
+                <NavLink className={isActive} to={'/pre-junior'}>PreJunior</NavLink>
+                <NavLink className={isActive} to={'/junior'}>Junior</NavLink>
+                <NavLink className={isActive} to={'/junior-plus'}>JuniorPlus</NavLink>
                 <button onClick={buttonHandler}
                      className={`${s.menuButton} 
                      ${(buttonHandler)
@@ -20,7 +25,6 @@ function Header() {
                          : s.buttonIsNotClicked}`}
                 ></button>
             </div>
-        </div>
     )
 }
 
