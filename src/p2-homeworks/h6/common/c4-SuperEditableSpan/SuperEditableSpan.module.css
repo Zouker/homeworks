@@ -1,0 +1,8 @@
+.editableSpan {
+ color: #385d8c;
+    font-weight: bold;
+}
+
+.editableSpan:before {
+    content: '\270E';
+}
