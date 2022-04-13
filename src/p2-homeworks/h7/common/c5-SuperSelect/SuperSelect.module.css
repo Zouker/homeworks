@@ -1,0 +1,19 @@
+.select {
+    display: block;
+    max-width: 100px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #a2e0fd;
+    outline: #a2e0fd;
+    background-color: #385d8c;
+    color: #a2e0fd;
+}
+
+.option {
+    background-color: #385d8c;
+}
+
+.option:hover {
+    background-color: #a2e0fd;
+}

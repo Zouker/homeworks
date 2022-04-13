@@ -1,6 +1,10 @@
 .editableSpan {
- color: #385d8c;
+    display: inline-block;
+    height: 24px;
+    padding-top: 5px;
+    color: #385d8c;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .editableSpan:before {
