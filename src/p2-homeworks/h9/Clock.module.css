@@ -1,0 +1,19 @@
+.clock {
+    width: 200px;
+    padding: 0.5em;
+    font-size: 24px;
+    text-align: center;
+}
+
+.time {
+    color: #61dafb;
+    background: #0f3854;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}
+
+.date {
+    letter-spacing: 0.1em;
+    color: #61dafb;
+    background: #0f3854;
+}
