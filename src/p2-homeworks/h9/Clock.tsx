@@ -25,8 +25,8 @@ function Clock() {
         setShow(false) // close
     }
 
-    const stringTime = date.toLocaleTimeString(); //'Time' // fix with date
-    const stringDate = date.toLocaleDateString(); //'Date' // fix with date
+    const stringTime = date.toLocaleTimeString() || <br/>; //'Time' // fix with date
+    const stringDate = date.toLocaleDateString() || <br/>; //'Date' // fix with date
 
     return (
         <div className={styles.clock}>
@@ -37,10 +37,12 @@ function Clock() {
                 <span>{stringTime}</span>
             </div>
 
-            {show && (
+            {show ? (
                 <div className={styles.date}>
                     <span>{stringDate}</span>
                 </div>
+            ) : (
+                <br/>
             )}
 
             <SuperButton onClick={start}>start</SuperButton>
