@@ -16,7 +16,7 @@ export const loadingReducer = (state: PropsType = initState, action: ActionType)
 }
 
 type ActionType = {
-    type: string
+    type: 'LOADING'
     isLoading: boolean
 }
 

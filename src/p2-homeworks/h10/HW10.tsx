@@ -8,14 +8,10 @@ import preloader from './preloader.svg'
 function HW10() {
     const loading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
     const dispatch = useDispatch()
-    // useSelector, useDispatch
-    // const loading = false
 
     const setLoading = () => {
         dispatch(loadingAC(true))
         setTimeout(() => dispatch(loadingAC(false)), 2000)
-        // dispatch
-        // setTimeout
         console.log('loading...')
     };
     return (
