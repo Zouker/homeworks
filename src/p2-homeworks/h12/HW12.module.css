@@ -1,9 +1,23 @@
+.container {
+    display: flex;
+}
+
 .dark {
     background: dimgrey;
 }
 
 .dark-text {
     color: aliceblue;
+    text-shadow: 1px 1px 1px #000
+}
+
+.light {
+    background: aliceblue;
+}
+
+.light-text {
+    color: dimgrey;
+    text-shadow: 1px 1px 1px #000
 }
 
 .red {
@@ -12,12 +26,40 @@
 
 .red-text {
     color: aqua;
+    text-shadow: 1px 1px 1px #ff0000
 }
 
-.some {
+.yellow {
+    background: yellow;
+}
+
+.yellow-text {
+    color: #0009ff;
+    text-shadow: 1px 1px 1px #07e8f3
+}
+
+.green {
     background: lightgreen;
 }
 
-.some-text {
-    color: darkslateblue;
+.green-text {
+    color: #060a79;
+    text-shadow: 1px 1px 1px #ff0000
+}
+
+.gold {
+    background: gold;
+}
+
+.gold-text {
+    color: darkcyan;
+    text-shadow: 1px 1px 1px #69d383
+}
+
+.texture {
+    background-image: url('https://wallpapercave.com/wp/wp3165120.jpg') ;
+}
+
+.default {
+    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-misc9-kut7319-chim.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=294162dffd7577eba8b8cb7853481b59');
 }
