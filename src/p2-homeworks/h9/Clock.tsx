@@ -34,20 +34,20 @@ function Clock() {
                  onMouseEnter={onMouseEnter}
                  onMouseLeave={onMouseLeave}
             >
-                <span>{stringTime}</span>
+                {stringTime}
             </div>
 
             {show ? (
                 <div className={styles.date}>
-                    <span>{stringDate}</span>
+                    {stringDate}
                 </div>
             ) : (
                 <br/>
             )}
-
-            <SuperButton onClick={start}>start</SuperButton>
-            <SuperButton onClick={stop}>stop</SuperButton>
-
+            <div>
+                <SuperButton onClick={start}>start</SuperButton>
+                <SuperButton onClick={stop}>stop</SuperButton>
+            </div>
         </div>
     )
 }

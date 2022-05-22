@@ -1,14 +1,28 @@
 .items {
     display: flex;
-    width: 400px;
+    justify-content: space-between;
+    text-align: start;
+    width: 40%;
+    margin: auto;
 }
 
 .item {
     padding: 5px;
-    min-width: 60%;
+    width: 10%;
 }
 
 .button {
     display: inline;
-    width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    .items {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .items {
+        width: 70%;
+    }
 }

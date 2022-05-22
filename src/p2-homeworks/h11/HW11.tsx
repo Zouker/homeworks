@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import s from './HW11.module.css'
 
 function HW11() {
     // const [value1, setValue1] = useState(0)
@@ -25,25 +26,26 @@ function HW11() {
             homeworks 11
 
             {/*should work (должно работать)*/}
-            <div style={{display: 'flex', alignItems: 'center', color: '#385d8c', fontWeight: 'bold'}}>
-                <span>{value[0]}</span>
-                <SuperRange value={value[0]}
-                            onChangeRange={handleOne}
-                    // сделать так чтоб value1 изменялось
-                />
+            <div className={s.container}>
+                <div className={s.range}>
+                    <span>{value[0]}</span>
+                    <SuperRange value={value[0]}
+                                onChangeRange={handleOne}
+                        // сделать так чтоб value1 изменялось
+                    />
+                </div>
+
+                <div className={s.range}>
+                    <span>{value[0]}</span>
+                    <SuperDoubleRange
+                        value={value}
+                        onChangeRange={handleChange}
+
+                        // сделать так чтоб value1 и value2 изменялось
+                    />
+                    <span>{value[1]}</span>
+                </div>
             </div>
-
-            <div style={{display: 'flex', alignItems: 'center', color: '#385d8c', fontWeight: 'bold'}}>
-                <span>{value[0]}</span>
-                <SuperDoubleRange
-                    value={value}
-                    onChangeRange={handleChange}
-
-                    // сделать так чтоб value1 и value2 изменялось
-                />
-                <span>{value[1]}</span>
-            </div>
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperRange/>*/}

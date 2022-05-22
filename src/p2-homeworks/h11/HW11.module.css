@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    color: #385d8c;
+    font-weight: bold;
+}
