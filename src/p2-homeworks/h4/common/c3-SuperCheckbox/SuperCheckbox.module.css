@@ -1,4 +1,4 @@
-.checkbox {                     /* hiding of the default checkbox */
+.checkbox { /* hiding of the default checkbox */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -11,6 +11,7 @@
 .checkBoxSpan {
     position: absolute;
     margin-left: -20px;
+    margin-top: 2px;
     width: 15px;
     height: 15px;
     border: 1px solid black;
